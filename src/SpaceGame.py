@@ -65,24 +65,24 @@ def drawWin(red, yellow, yellow_bullets, red_bullets, yellow_health, red_health)
 
 
 def handle_yellow_movement(yellow, keys_pressed):
-    if(keys_pressed[pygame.K_a] and (yellow.x - VELOCITY) > 0):                                   #left
+    if(keys_pressed[pygame.K_a] and (yellow.x - VELOCITY) > 0):                                               #left
         yellow.x -= VELOCITY
-    if(keys_pressed[pygame.K_d] and (yellow.x + VELOCITY + SPACESHIP_HEIGHT) < BORDER.x):                                   #right
+    if(keys_pressed[pygame.K_d] and (yellow.x + VELOCITY + SPACESHIP_HEIGHT) < BORDER.x):                     #right
             yellow.x += VELOCITY
-    if(keys_pressed[pygame.K_s] and (yellow.y + VELOCITY + SPACESHIP_WIDTH) < HEIGHT):                                   #down
+    if(keys_pressed[pygame.K_s] and (yellow.y + VELOCITY + SPACESHIP_WIDTH) < HEIGHT):                        #down
         yellow.y += VELOCITY
-    if(keys_pressed[pygame.K_w] and (yellow.y - VELOCITY) > 0):                                   #up
+    if(keys_pressed[pygame.K_w] and (yellow.y - VELOCITY) > 0):                                               #up
         yellow.y -= VELOCITY
 
 
 def handle_red_movement(red, keys_pressed):
     if(keys_pressed[pygame.K_LEFT] and (red.x - VELOCITY) > (BORDER.x + 10)):                                #left
         red.x -= VELOCITY
-    if(keys_pressed[pygame.K_RIGHT] and (red.x + VELOCITY + SPACESHIP_HEIGHT) < WIDTH):                               #right
+    if(keys_pressed[pygame.K_RIGHT] and (red.x + VELOCITY + SPACESHIP_HEIGHT) < WIDTH):                      #right
         red.x += VELOCITY
-    if(keys_pressed[pygame.K_DOWN] and (red.y + VELOCITY + SPACESHIP_WIDTH) < HEIGHT):                                #down
+    if(keys_pressed[pygame.K_DOWN] and (red.y + VELOCITY + SPACESHIP_WIDTH) < HEIGHT):                       #down
         red.y += VELOCITY
-    if(keys_pressed[pygame.K_UP] and (red.y - VELOCITY) > 0):                                  #up
+    if(keys_pressed[pygame.K_UP] and (red.y - VELOCITY) > 0):                                                #up
         red.y -= VELOCITY
 
 
@@ -127,7 +127,7 @@ def main():
 
     run = True
     while(run):
-        clock.tick(FPS)                                                 #makes shure game runs at 60 fps max
+        clock.tick(FPS)                                                 #makes sure game runs at 60 fps max
         for event in pygame.event.get():
             if (event.type == pygame.QUIT):
                 run = False
@@ -170,5 +170,5 @@ def main():
     
     pygame.quit()
 
-if( __name__ == "__main__"):                                            #makes shure game is only run when run directly
+if( __name__ == "__main__"):                                            #makes sure game is only run when run directly
     main()      
