@@ -1,6 +1,6 @@
 # Pygame Multiplayer Spaceship Battle
 Game Screenshot
-![Alt text](/relative/path/to/img.jpg?raw=true "Optional Title")
+![Alt text](/Assets/Screenshot.png?raw=true "Optional Title")
 
 ## Description
 This is a simple multiplayer spaceship battle game built with Pygame. Two players control spaceships, attempting to shoot each other while avoiding bullets. The game features health indicators for each player and announces the winner when one player's health reaches zero.
