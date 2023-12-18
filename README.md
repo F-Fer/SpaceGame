@@ -1,5 +1,5 @@
 # Pygame Multiplayer Spaceship Battle
-Game Screenshot
+
 ![Alt text](/Assets/Screenshot.png?raw=true "Optional Title")
 
 ## Description
@@ -22,14 +22,12 @@ The objective is to reduce the opponent's health to zero by shooting bullets. Th
 Make sure you have Python and Pygame installed on your system. You can install Pygame using the following command:
 
 ```
-bash
 pip install pygame
 ```
 To run the game, execute the following command:
 
 ```
-bash
-python your_game_filename.py
+python SpaceGame.py
 ```
 
 ## Features
